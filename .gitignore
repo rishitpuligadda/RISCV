@@ -1,0 +1,30 @@
+# Simulation build outputs
+sim_build/
+*.vcd
+*.fst
+*.xml
+results.xml
+__pycache__/
+*.pyc
+
+# SymbiYosys working directories
+formal/*/
+!formal/*.sby
+
+# Yosys / synth intermediate files
+*.log
+*.blif
+*.json
+
+# Editor swap files
+*.swp
+*.swo
+*~
+
+# Reports (regenerated, don't commit)
+synth/*.log
+
+# macOS / IDE cruft
+.DS_Store
+.vscode/
+.idea/

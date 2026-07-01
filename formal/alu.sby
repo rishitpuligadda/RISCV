@@ -1,0 +1,15 @@
+[options]
+mode bmc 
+depth 5
+
+[engines]
+smtbmc
+
+[script]
+plugin -i slang 
+read_slang operation.sv ALU.sv
+prep -top ALU
+
+[files]
+../RTL/operation.sv
+../RTL/ALU.sv

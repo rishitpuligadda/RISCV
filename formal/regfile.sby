@@ -1,0 +1,14 @@
+[options]
+mode bmc
+depth 10
+
+[engines]
+smtbmc
+
+[script]
+plugin -i slang
+read_slang Registers.sv
+prep -top Registers
+
+[files]
+../RTL/Registers.sv

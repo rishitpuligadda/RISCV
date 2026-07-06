@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 2
+
+[engines]
+smtbmc
+
+[script]
+plugin -i slang
+read_slang instrsel.sv immgen.sv
+prep -top immgen
+
+[files]
+../RTL/instrsel.sv
+../RTL/immgen.sv

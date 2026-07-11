@@ -1,0 +1,14 @@
+[options]
+mode bmc
+depth 10
+
+[engines]
+smtbmc
+
+[script]
+plugin -i slang
+read_slang PCUnit.sv
+prep -top PCUnit
+
+[files]
+../RTL/PCUnit.sv
